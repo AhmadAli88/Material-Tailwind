@@ -1,7 +1,7 @@
 import React from "react";
 import { Progress } from "@material-tailwind/react";
 
-const Progress = () => {
+const MyProgress = () => {
   return (
     <div>
       <Progress value={50} color="blue" />
@@ -9,4 +9,4 @@ const Progress = () => {
   );
 };
 
-export default Progress;
+export default MyProgress;

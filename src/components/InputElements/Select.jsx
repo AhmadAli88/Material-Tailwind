@@ -1,7 +1,7 @@
 import React from "react";
 import { Select, Option } from "@material-tailwind/react";
 
-const Select = () => {
+const MySelect = () => {
   return (
     <div>
       <Select label="Select Version">
@@ -12,4 +12,4 @@ const Select = () => {
   );
 };
 
-export default Select;
+export default MySelect;

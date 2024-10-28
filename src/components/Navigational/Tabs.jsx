@@ -1,7 +1,7 @@
 import React from "react";
 import { Tabs, TabsHeader, TabsBody, Tab, TabPanel } from "@material-tailwind/react";
 
-const Tabs = () => {
+const MyTabs = () => {
   return (
     <div>
       <Tabs value="html">
@@ -18,4 +18,4 @@ const Tabs = () => {
   );
 };
 
-export default Tabs;
+export default MyTabs;

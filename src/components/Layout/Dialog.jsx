@@ -1,9 +1,18 @@
-import React from "react";
-import { Dialog, DialogHeader, DialogBody, DialogFooter } from "@material-tailwind/react";
+import React, { useState } from "react";
+import { Dialog, DialogHeader, DialogBody, DialogFooter, Button } from "@material-tailwind/react";
 
-const Dialog = () => {
+const MyDialog = () => {
+  // State to control the dialog's open state
+  const [open, setOpen] = useState(false);
+
+  // Function to toggle the dialog open/close state
+  const handleOpen = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
   return (
     <div>
+      <Button onClick={handleOpen}>Open Dialog</Button>
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>Dialog Title</DialogHeader>
         <DialogBody>Dialog content here</DialogBody>
@@ -15,4 +24,4 @@ const Dialog = () => {
   );
 };
 
-export default Dialog;
+export default MyDialog;

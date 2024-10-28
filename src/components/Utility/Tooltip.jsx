@@ -1,7 +1,7 @@
 import React from "react";
-import { Tooltip } from "@material-tailwind/react";
+import { Button, Tooltip } from "@material-tailwind/react";
 
-const Tooltip = () => {
+const MyTooltip = () => {
   return (
     <div>
       <Tooltip content="Material Tailwind">
@@ -11,4 +11,4 @@ const Tooltip = () => {
   );
 };
 
-export default Tooltip;
+export default MyTooltip;

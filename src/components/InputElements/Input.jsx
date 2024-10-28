@@ -1,7 +1,7 @@
 import React from "react";
 import { Input } from "@material-tailwind/react";
 
-const Input = () => {
+const MyInput = () => {
   return (
     <div>
       <Input type="text" label="Username" variant="standard" />
@@ -11,4 +11,4 @@ const Input = () => {
   );
 };
 
-export default Input;
+export default MyInput;

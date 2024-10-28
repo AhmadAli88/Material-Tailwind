@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import "./index.css";
+
+import Table from "./components/DataDisplay/Table";
+import MyAvatar from "./components/DataDisplay/Avatar";
+import MyAlert from "./components/Feedback/Alert";
+import MyProgress from "./components/Feedback/Progress";
+import MyButton from "./components/InputElements/Button";
+import MyInput from "./components/InputElements/Input";
+import MySelect from "./components/InputElements/Select";
+import MyCard from "./components/Layout/Card";
+import MyDialog from "./components/Layout/Dialog";
+import MyNavbar from "./components/Navigational/Navbar";
+import MyTabs from "./components/Navigational/Tabs";
+import MyTooltip from "./components/Utility/Tooltip";
+import MyTypography from "./components/Utility/Typography";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div style={{display: 'flex', flexDirection: 'column', gap: '40px'}}>
+      <MyAvatar />
+      <Table />
+      <MyProgress />
+      <MyButton />
+      <MyInput />
+      <MySelect />
+      <MyCard />
+      <MyDialog />
+      <MyNavbar />
+      <MyTabs />
+      <MyTooltip />
+      <MyTypography />
+      <MyAlert />
+    </div>
+  );
 }
 
-export default App
+export default App;
